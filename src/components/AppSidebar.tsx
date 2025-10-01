@@ -95,10 +95,12 @@ export function AppSidebar() {
   return (
     <Sidebar className="border-r border-border">
       <SidebarHeader className="border-b border-border p-6">
-        <h1 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
-          Amitrano Group
-        </h1>
-        <p className="text-sm text-muted-foreground">ERP System</p>
+        <div className="space-y-1">
+          <h1 className="text-2xl font-bold text-primary">
+            Amitrano Group
+          </h1>
+          <p className="text-sm text-muted-foreground">ERP System</p>
+        </div>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
