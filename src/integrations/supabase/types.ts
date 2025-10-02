@@ -14,7 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      presenze: {
+        Row: {
+          area_nome: string | null
+          created_at: string
+          dipendente_id: string
+          dipendente_nome: string
+          id: string
+          latitudine: number | null
+          longitudine: number | null
+          timestamp: string
+          tipo: string
+        }
+        Insert: {
+          area_nome?: string | null
+          created_at?: string
+          dipendente_id: string
+          dipendente_nome: string
+          id?: string
+          latitudine?: number | null
+          longitudine?: number | null
+          timestamp?: string
+          tipo: string
+        }
+        Update: {
+          area_nome?: string | null
+          created_at?: string
+          dipendente_id?: string
+          dipendente_nome?: string
+          id?: string
+          latitudine?: number | null
+          longitudine?: number | null
+          timestamp?: string
+          tipo?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

@@ -11,6 +11,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import TimbraturePresenze from "@/components/TimbraturePresenze";
 
 const dipendenti = [
   { id: "D001", nome: "Andrea Santoro", ruolo: "Direttore Operativo", email: "a.santoro@amitrano.it", telefono: "+39 333 1234567", dipartimento: "Direzione" },
@@ -38,6 +39,8 @@ export default function Dipendenti() {
         onAddClick={() => {}}
         addButtonText="Nuovo Dipendente"
       />
+
+      <TimbraturePresenze />
 
       <Card className="gradient-card border-border/50">
         <CardContent className="pt-6">
